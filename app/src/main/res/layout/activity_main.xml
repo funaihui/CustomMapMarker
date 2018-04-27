@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlParent"
+    tools:context="com.moos.marker.Sample.MainActivity">
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CustomMapMarker by wizardev"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar">
+
+    </com.amap.api.maps.MapView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/add_custom_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加自定义Marker" />
+    </LinearLayout>
+
+</RelativeLayout>
